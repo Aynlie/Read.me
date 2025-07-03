@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Grid container layout */
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+      grid-template-columns: 1fr 3fr;
+      grid-gap: 10px;
+    }
+
+    /* Each grid section */
+    header    { grid-area: header; background: #ffa7a7; padding: 10px; }
+    nav       { grid-area: nav; background: #e6ffff; padding: 10px; }
+    main      { grid-area: main; background: #ffcc80; padding: 10px; }
+    footer    { grid-area: footer; background: #90ee90; padding: 10px; }
+  </style>
+</head>
+<body>
+  <!-- Grid-based layout -->
+  <div class="grid-container">
+    <header><h1>My Website</h1></header>
+    <nav>Menu</nav>
+    <main>Main Content</main>
+    <div class="sidebar">Sidebar</div> <!-- Optional -->
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>
